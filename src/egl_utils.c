@@ -316,7 +316,7 @@ void handle_mouse(gl_t *state, struct input_event *event)
             set_mover_gl_center(render_state, ogl_x, ogl_y);
             break;
         case REL_Y:
-            y += event->value;
+            y -= event->value;
             if(y < 0.0f)
                 y = 0.0f;
             else if(y > state->screen_height)

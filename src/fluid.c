@@ -108,9 +108,9 @@ void start_simulation()
 
     // The number of particles used may differ slightly
     #ifdef RASPI
-    params.number_fluid_particles_global = 1500;
+    params.number_fluid_particles_global = 6000;
     #else
-    params.number_fluid_particles_global = 1500;
+    params.number_fluid_particles_global = 6000;
     #endif
 
     // Boundary box

@@ -75,8 +75,8 @@ void init_exit_menu(exit_menu_t *state, gl_t *gl_state)
 
     // Initialize cursor
     state->cursor_state = malloc(sizeof(cursor_t));
-    int cursor_width = gl_state->screen_width/16.0;
-    int cursor_height = gl_state->screen_height/7.5;
+    int cursor_width = gl_state->screen_width/12;
+    int cursor_height = gl_state->screen_height/9;
 
     #ifdef RASPI
     init_cursor(state->cursor_state, gl_state, "SPH/images/cursor.png", cursor_width, cursor_height);
